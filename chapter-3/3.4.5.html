@@ -1,10 +1,19 @@
 <!DOCTYPE>
 <html>
     <head>
-        <meta lang="en">
+        <meta lang="en" charset="utf-8">
         <title>Shopping list</title>
     </head>
     <body>
+        <style type="text/css">
+        <!--
+        p::first-line{color: red;font-size:20pt}
+        .red{color:blue; font-size: 25pt}
+        #text{color: greenyellow;font-size: 30pt}
+        td{color:blue;font-size:12pt}
+        p{color:red}
+        -->        
+        </style> 
         <h1>What to buy</h1>
         <p title="a gentle reminder">Don't forget to buy this stuff</p>
         <ul id="purchases">
@@ -12,8 +21,20 @@
             <li class="sale">Cheese </li>
             <li class="sale important">Milk </li>
         </ul>
+        <p>dfgsadfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdf...</p>
+        <div class="red">士大夫井冈山地方官</div>
+        <p id="text">士大夫井冈山地方官</p>
+        
+        <table width="300" border="1" height="150">
+        <tr>
+        <td align="center">
+        <p>css 规则</p>   <!-- p 优先级高于 td , 样式继承并覆盖td-->     
+        </td>
+        </table>
+        <!--
         <script>
             alert(document.getElementById("purchases"));
         </script>
+        -->
     </body>
 </html>
