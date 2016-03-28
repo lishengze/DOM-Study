@@ -3,16 +3,39 @@
     <head>
         <meta charset="utf-8">
         <title> Test Style </title>
+        <script src='js/loadEvent.js'> </script>
+        <script src='js/setCss.js'> </script>      
+        <link rel="stylesheet" href="css/format.css"> </link>     
     </head>
     <body>
         <p id="example" style="font-size: 20px; color:red">
             Here is an example of style
         </p>
-        <script>
-            alert(typeof document.getElementsByTagName('p')[0].getAttribute('style'));
-            alert(typeof document.getElementById('example').style);
-            alert(typeof document.getElementById('example').id);
-        </script>
+        <h1> Hello World </h1>
+        <h1> Hello CSS </h1>
+        <table>
+            <caption>Itinerary</caption>
+            <thead>
+                <tr>
+                    <th>When</th>
+                    <th>Where</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>June 9th</td>
+                    <td>Portland, <abbr title="Oregon">OR</abbr></td>
+                </tr>
+                <tr>
+                    <td>June 10th</td>
+                    <td>Seattle, <abbr title="Washington">WA</abbr></td>
+                </tr>
+                <tr>
+                    <td>June 12th</td>
+                    <td>Sacramento, <abbr title="California">CA</abbr></td>
+                </tr>
+            </tbody>
+        </table>
     </body>        
 </html>    
     
