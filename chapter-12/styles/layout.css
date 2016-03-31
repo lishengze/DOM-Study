@@ -39,7 +39,7 @@ header {
 }
 #photos header {
    background-image: url(../images/spring-3.jpg);
-       background-position: top left;
+   background-position: top left;
    background-size: cover;
 }
 #live header {
@@ -105,6 +105,14 @@ article #image-spring {
     left: 0px;
     top: 0px; 
 }
+article #image-spring {
+    left: 0px;
+    top: 0px; 
+}
+article #image{
+    height: 100%;
+    width: 100%;
+}
 article img {
     border-width: .1em;
     border-style: solid;
@@ -113,4 +121,12 @@ article img {
 }
 #imagegallery li{
     display: inline;
+}
+
+article table {
+    border: 1;
+}
+
+td {
+    padding: .5em 3em;
 }
