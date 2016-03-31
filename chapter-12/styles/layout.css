@@ -88,9 +88,29 @@ article {
     padding: 2em 10%;
     line-height: 1.8em;
 }
+article div#slideshow{
+    height: 240px;
+    width: 202px;
+    position: relative;
+    overflow: hidden;
+}
+article #frame {
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    z-index: 99;
+    opacity: 0.5;
+}
+article #image-spring {
+    left: 0px;
+    top: 0px; 
+}
 article img {
     border-width: .1em;
     border-style: solid;
     outline-width: .1em;
     outline-style: solid;
+}
+#imagegallery li{
+    display: inline;
 }
