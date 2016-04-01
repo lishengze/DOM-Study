@@ -126,7 +126,9 @@ article img {
 article table {
     border: 1;
 }
-
+#Exhibition{
+    text-align: center;
+}
 td {
     padding: .5em 3em;
 }
