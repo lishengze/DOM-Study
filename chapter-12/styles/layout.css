@@ -132,3 +132,9 @@ article table {
 td {
     padding: .5em 3em;
 }
+label{
+    display: block    
+}
+fieldset{
+    border: 0
+}
