@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><title>Writing to Same Doc</title>  
+  
+<script language="JavaScript">  
+  //重新写入函数  
+  function RepeatWrite(){  
+    // 保存写入的内容  
+    var newContent = "<html><head><title>A New Doc</title></head>"  
+    newContent += "<body bgcolor='aqua'><h1>This document is brand new.</h1>"  
+    newContent += "Click the Back button to see original document."  
+    newContent += "</body></html>"  
+    // 写入新的内容  
+    document.write(newContent);  
+    document.close();  
+  }  
+    
+</script>  
+</head>  
+<body>  
+  <form>  
+    <!--单击按钮调用写入函数-->  
+    <input type="button" value="Replace Content" onClick="RepeatWrite()">  
+  </form>  
+</body>  
+</html> 

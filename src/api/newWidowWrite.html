@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><title>Writing to Subwindow</title>  
+<script language="JavaScript">  
+  //生命一个全局变量  
+  var newWindow;  
+  //打开一个新的窗口  
+  function makeNewWindow(){  
+	console.log ('make new window');
+    newWindow = window.open("","","status,height=200,width=300")  
+  }  
+  //判断新窗口是否关闭，如果关闭重新打开  
+  function subWrite(){  
+    // make new window if someone has closed it  
+    if(newWindow !== null && newWindow.closed){  
+      makeNewWindow()  
+    }  
+    // 是新窗口获得焦点  
+    newWindow.focus()  
+    //保存写入内容  
+    var newContent = "<html><head><title>A New Doc</title></head>"  
+    newContent += "<body bgcolor='coral'><h1>This document is brand new.</h1>"  
+    newContent += "</body></html>"  
+    // 将HTML代码写入新窗口中  
+    newWindow.document.write(newContent)  
+    newWindow.document.close()    // close layout stream  
+  }  
+</script>  
+</head>  
+  
+<body onLoad="makeNewWindow()">  
+  <form>  
+    <input type="button" value="Write to Subwindow" onClick="subWrite()">  
+  </form>  
+</body>  
+</html> 
