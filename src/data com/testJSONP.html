@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<title> 测试jsonp 数据异域处理 </title>		
+	</head>
+	<body>
+		<h1> Hello World </h1>
+		<script> 
+			function callbackFunc(data) {
+				console.log (data.name);
+				console.log (data.age);
+			}
+		</script>
+		<script src='http://172.1.128.170:8000/jsonp.js'></script>
+	</body>
+</html>
